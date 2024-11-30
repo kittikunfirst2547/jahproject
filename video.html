@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Video</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    video {
+      width: 80%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <video controls autoplay id="video-player">
+    <source id="video-source" src="" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <script>
+    // อ่านค่าพารามิเตอร์จาก URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const videoFile = urlParams.get('video'); // ดึงชื่อไฟล์วิดีโอจากพารามิเตอร์
+
+    if (videoFile) {
+      // ตั้งค่าแหล่งวิดีโอและโหลด
+      const videoSource = document.getElementById('video-source');
+      videoSource.src = `img/${videoFile}`; // ชื่อโฟลเดอร์เก็บวิดีโอ
+      document.getElementById('video-player').load();
+    } else {
+      alert('No video selected!');
+    }
+  </script>
+</body>
+</html>
