@@ -97,7 +97,6 @@ nav ul li a {
     background: url('img/bg2.png') no-repeat;
     background-size: 500px;
     background-position: center;
-    
 
 
 }
@@ -115,60 +114,4 @@ nav ul li a {
 
 
 
-}
-@media (max-width: 768px) {
-    .container {
-        padding: 0 20px; /* เพิ่ม padding ให้กับ container */
-    }
-
-    .header-info {
-        margin-top: 200px;
-        width: 100%;
-    }
-
-    .header-title h1 {
-        font-size: 50px;
-    }
-
-    .header-content p {
-        font-size: 16px;
-    }
-
-    nav ul {
-        width: 100%; /* กระจายเมนูแบบเต็ม */
-        justify-content: space-around;
-    }
-
-    .powerful-con h1 {
-        font-size: 50px;
-    }
-}
-
-/* มือถือ (หน้าจอขนาด 480px) */
-@media (max-width: 480px) {
-    .header-info {
-        margin-top: 150px;
-        text-align: center;
-    }
-
-    .header-title h1 {
-        font-size: 40px;
-    }
-
-    .header-content p {
-        font-size: 14px;
-    }
-
-    .header-btn {
-        margin-top: 30px;
-    }
-
-    .netflix {
-        padding: 0.8rem 1rem;
-        font-size: 14px;
-    }
-
-    .powerful-con h1 {
-        font-size: 40px;
-    }
 }
